@@ -1,14 +1,29 @@
 <template>
-  <div>
-    accounts page, cool!
+  <div class="container">
+    <Card title="Accounts">
+      accounts page, cool!
+    </Card>
   </div>
 </template>
 
 <script>
-import firebase from 'firebase'
+import Card from '@/components/card'
 
-export default {}
+export default {
+  components: {
+    Card
+  }
+}
 </script>
 
-<style lang="scss" scoped>
+<style scoped>
+.container {
+  margin: 0 auto;
+  padding-top: 80px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 </style>

@@ -1,5 +1,6 @@
 import Vue from "vue";
-import firebase from "firebase";
+import firebase from 'firebase/app';
+import "firebase/auth";
 
 Vue.config.productionTip = false;
 
@@ -13,7 +14,6 @@ export default ({ $axios, store, redirect }) => {
   firebase.initializeApp(configOptions);
 
   firebase.auth().onAuthStateChanged(function (user) {
-    console.log('dude')
     store.dispatch("fetchUser", user);
   })
 

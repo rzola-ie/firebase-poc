@@ -49,6 +49,10 @@ export default {
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
 }
 
+.card-header {
+  margin-bottom: 1rem;
+}
+
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;

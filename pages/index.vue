@@ -23,7 +23,8 @@
 </template>
 
 <script>
-import firebase from 'firebase'
+import firebase from 'firebase/app'
+import 'firebase/auth'
 import Card from '@/components/card'
 
 export default {
@@ -59,6 +60,7 @@ export default {
 <style>
 .container {
   margin: 0 auto;
+  padding-top: 80px;
   min-height: 100vh;
   display: flex;
   justify-content: center;
